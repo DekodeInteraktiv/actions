@@ -1,0 +1,25 @@
+name: AXE report
+description: >
+    Generate a AXE report
+inputs:
+    github_token:
+        description: Secret GitHub API token to use for making API requests.
+        required: true
+    actor:
+        description: GitHub user or organization to use for making API requests.
+        required: true
+    comment:
+        description: The comment body to parse for commands.
+        required: true
+    pr:
+        description: The pull request number to run the action on.
+        required: true
+    aws_access_key_id:
+        description: AWS access key ID to use for making API requests.
+        required: true
+    aws_secret_access_key:
+        description: AWS secret access key to use for making API requests.
+        required: true
+runs:
+    using: 'docker'
+    image: 'Dockerfile'

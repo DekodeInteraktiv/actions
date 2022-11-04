@@ -1,0 +1,22 @@
+{
+	"name": "axe-report",
+	"version": "1.0.0",
+	"description": "Generate AXE reports",
+	"main": "index.js",
+	"scripts": {
+		"format": "prettier --write .",
+		"start": "node index.js"
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1"
+	},
+	"dependencies": {
+		"@actions/core": "^1.10.0",
+		"@actions/github": "^5.1.1",
+		"@axe-core/playwright": "^4.5.0",
+		"aws-sdk": "^2.1246.0",
+		"axe-html-reporter": "^2.2.3",
+		"crypto-js": "^4.1.1",
+		"playwright": "^1.27.1"
+	}
+}
